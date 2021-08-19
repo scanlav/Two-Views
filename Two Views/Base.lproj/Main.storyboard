@@ -16,23 +16,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="center" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="baC-XK-yxN">
+                            <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="baC-XK-yxN">
                                 <rect key="frame" x="20" y="478" width="374" height="392"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="392" id="rJC-Zl-Ndg"/>
-                                </constraints>
                             </view>
-                            <view contentMode="center" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FmU-qC-6gK">
+                            <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="FmU-qC-6gK">
                                 <rect key="frame" x="20" y="44" width="374" height="392"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="392" id="s54-CO-hLl"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <constraints>
+                            <constraint firstItem="FmU-qC-6gK" firstAttribute="trailing" secondItem="baC-XK-yxN" secondAttribute="trailing" id="1fA-Uu-da2"/>
+                            <constraint firstItem="FmU-qC-6gK" firstAttribute="leading" secondItem="baC-XK-yxN" secondAttribute="leading" id="2r7-xY-Bbm"/>
+                            <constraint firstItem="baC-XK-yxN" firstAttribute="top" secondItem="FmU-qC-6gK" secondAttribute="bottom" constant="42" id="Flj-9g-cAs"/>
+                            <constraint firstItem="FmU-qC-6gK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="PAh-Tv-Kmc"/>
+                            <constraint firstItem="FmU-qC-6gK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="blC-Hl-4sk"/>
+                            <constraint firstItem="FmU-qC-6gK" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="dbM-aX-ugM"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="baC-XK-yxN" secondAttribute="bottom" constant="-8" id="fre-2f-hfQ"/>
+                            <constraint firstAttribute="bottom" secondItem="FmU-qC-6gK" secondAttribute="bottom" constant="460" id="shQ-6l-GOf"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
